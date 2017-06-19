@@ -8,4 +8,4 @@
 
 
 ## 每天计划
-[82017](./atom.md)
+[2017.6.12](./linux-introduction.md)
