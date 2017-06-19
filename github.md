@@ -19,17 +19,17 @@ create a new repository
 # 一级标题
 ## 二级标题
 ### 三级标题
-1. 无序列表
+2. 无序列表
 主要使用-和*来标记无序列表
 
 - George Washington
 - John Adams
 * Thomas Jefferson
-1. 有序列表
+3. 有序列表
 
 1. James Madison
 2. James Monroe
 3. John Quincy Adams
-1. 链接
+4. 链接
 
 [github](http://github.com)
