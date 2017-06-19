@@ -13,4 +13,26 @@ create a new repository
  git add README.md  
  git commit -m "first commit"  
  git remote add origin https://github.com/wangleihd/freeBook-H5.git  
- git push -u origin master  
+ git push -u origin master  
+#### markdown的基本使用
+1. 标题
+# 一级标题
+## 二级标题
+### 三级标题
+1. 无序列表
+主要使用-和*来标记无序列表
+
+- George Washington
+- John Adams
+* Thomas Jefferson
+1. 有序列表
+
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
+1. 链接
+
+[github](http://github.com)
+1. 图片
+
+![Image of Yaktocat](图片地址)
