@@ -33,6 +33,3 @@ create a new repository
 1. 链接
 
 [github](http://github.com)
-1. 图片
-
-![Image of Yaktocat](图片地址)
