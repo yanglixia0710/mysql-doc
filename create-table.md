@@ -28,7 +28,7 @@
 
  字段名 |   类型     |  空值  |默认值  | 备注
 -------|------------|-------|-------|-----------
- sno   | int(4)     | NO    | NULL  |     
- cno   | int(4)     | NO    | NULL  |      
+ sno   | int(4)     | NO    | NULL  | 主键    
+ cno   | int(4)     | NO    | NULL  | 主键     
  grade | smallint(6)| YES   | NULL  |      
 
