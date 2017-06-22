@@ -1,4 +1,4 @@
-### Vim的基本使用
+### 一.Vim的基本使用
 
 1. i：在当前字符的左边插入
 1. I：在当前行首插入
@@ -14,7 +14,7 @@ l: 向后移动一个字符
 1. dd:剪切当前一行
 1. p: 粘贴内容到游标之后
 1. P: 粘贴内容到游标之前
-### 基本文件的操作
+### 二.基本文件的操作
 touch  file  
 cp file file1  
 cp file  /home/linux/file1  
@@ -22,7 +22,7 @@ mv file   file2
 mv file  /home/linux/  
 ls -al  .  
 cat  file  
-### 基本的目录操作
+### 三.基本的目录操作
 mkdir dir  
 cp dir   dir1  -a  
 cp dir   /home/linux/dir2  -a  
