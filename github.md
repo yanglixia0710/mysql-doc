@@ -1,4 +1,4 @@
-#### 创建一个github仓库
+#### 一.创建一个github仓库
 create a new repository  
 #### github仓库的使用  
 1. 我们本地已经有git仓库了, 那我们现在就直接与github仓库进行关联就可以了.
@@ -14,7 +14,7 @@ create a new repository
  git commit -m "first commit"  
  git remote add origin https://github.com/wangleihd/freeBook-H5.git  
  git push -u origin master  
-#### markdown的基本使用
+#### 二.markdown的基本使用
 1. 标题
 # 一级标题
 ## 二级标题
@@ -31,5 +31,9 @@ create a new repository
 2. James Monroe
 3. John Quincy Adams
 4. 链接
+5. 表格  
 
-[github](http://github.com)
+标题 | 内容 | 备注
+-----|------|-----
+今天 | 很热 | 少穿
+昨天 | 下雨 | 打伞
