@@ -9,11 +9,12 @@ int cgiMain()
 
 	fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
 
+	char sno[32] = "\0";
 	char sname[32] = "\0";
 	char sage[16] = "\0";
-	char sno[32] = "\0";
 	char sex[10]="\0";
 	char sedeptno[16]="\0";
+	char state[16]="\0";
 	int status = 0;
 
 	status = cgiFormString("sname",  sname, 32);
@@ -48,7 +49,13 @@ int cgiMain()
 		fprintf(cgiOut, "get sedeptno error!\n");
 		return 1;
 	}
-
+	/*status = cgiFormString("state", state,16);
+	if (status != cgiFormSuccess)
+	{
+		fprintf(cgiOut, "get state error!\n");
+		return 1;
+	}
+*/
 	//fprintf(cgiOut, "name = %s, age = %s, stuId = %s\n", name, age, stuId);
 
 	int ret;
@@ -72,7 +79,7 @@ int cgiMain()
 		return -1;
 	}
 
-	strcpy(sql, "create table information(sno int not null primary key, sname char(20) not null, sage int not null,sex char(10) not null default 'F',sedeptno int not null,)");
+	strcpy(sql, "create table information(sno int not null primary key, sname char(20) not null, sage int not null,sex char(10) not null default 'F',sedeptno int not null,state char(10)");
 	if ((ret = mysql_real_query(db, sql, strlen(sql) + 1)) != 0)
 	{
 		if (ret != 1)
@@ -83,7 +90,7 @@ int cgiMain()
 		}
 	}
 
-	sprintf(sql, "insert into information values(%d, '%s', %d,'%s',%d)", atoi(sno), sname, atoi(sage),sex,atoi(sedeptno));
+	sprintf(sql, "insert into information values(%d, '%s' ,'%s',%d,%d,%d)", atoi(sno), sname,sex, atoi(sage),atoi(sedeptno),atoi(state));
 	if (mysql_real_query(db, sql, strlen(sql) + 1) != 0)
 	{
 		fprintf(cgiOut, "%s\n", mysql_error(db));
