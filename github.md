@@ -1,4 +1,5 @@
-### 一.创建一个github仓库
+## github的使用
+#### 创建一个github仓库
 create a new repository  
 ####  添加远程仓库 
 1. 我们本地已经有git仓库了, 那我们现在就直接与github仓库进行关联就可以了.
