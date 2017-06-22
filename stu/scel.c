@@ -4,11 +4,25 @@
 #include <string.h>
 #include <mysql/mysql.h>
 #include "cgic.h"
-
+char * headname = "head.html";
+char * footname = "footer.html";
 int cgiMain()
 {
+	char ch;
+FILE * fd;
+		fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
+		if(!(fd = fopen(headname, "r"))){
+			fprintf(cgiOut, "Cannot open file, %s\n", headname);
+			return -1;
+		}
+		ch = fgetc(fd);
 
-	fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
+		while(ch != EOF){
+			fprintf(cgiOut, "%c", ch);
+			ch = fgetc(fd);
+		}
+	fclose(fd);
+	//fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
 	fprintf(cgiOut, "<head><meta charset=\"utf-8\"><title>查询结果</title>\
 		    <link rel=\"stylesheet\" href=\"/stu/public/css/bootstrap.min.css\">\
 		</head>");
