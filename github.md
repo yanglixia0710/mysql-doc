@@ -1,19 +1,20 @@
-#### 一.创建一个github仓库
+### 一.创建一个github仓库
 create a new repository  
-#### github仓库的使用  
+####  添加远程仓库 
 1. 我们本地已经有git仓库了, 那我们现在就直接与github仓库进行关联就可以了.
-  git remote add origin https://github.com/wangleihd/freeBook-H5.git  
-  git push -u origin master  
-
+  $ git remote add origin https://github.com/wangleihd/freeBook-H5.git  
+  $ git push -u origin master  
+  
 2. 我们还可以用clone直接去下载这个项目, 这也是最常用下载或拉取github仓库的方法.  
-  git clone https://github.com/wangleihd/freeBook-H5.git    
-3. 如果我们本地没有git仓库, 可以先在本地创建一个git仓库, 并做一个提交. 然后再互github远程仓库进行关联.
- echo "# abc" >> README.md  
- git init  
- git add README.md  
- git commit -m "first commit"  
- git remote add origin https://github.com/wangleihd/freeBook-H5.git  
- git push -u origin master  
+  $ git clone https://github.com/wangleihd/freeBook-H5.git    
+#### 同步master分支
+1. $ git push origin master
+#### 同步其它分支
+1. $ git push origin branch-name
+#### 删除远程分支
+1. $ git push -u origin :branch-name
+#### 服务器上的git已经更新了, 当我们需要将服务器的源码与本地源友进行同步进时, 需要使用下面的命令.
+1.$ git pull origin master
 #### 二.markdown的基本使用
 1. 标题
 # 一级标题
