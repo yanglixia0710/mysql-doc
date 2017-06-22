@@ -16,7 +16,7 @@ create a new repository
 1. $ git push -u origin :branch-name
 #### 服务器上的git已经更新了, 当我们需要将服务器的源码与本地源友进行同步进时, 需要使用下面的命令.
 1.$ git pull origin master
-#### 二.markdown的基本使用
+## markdown的基本使用
 1. 标题
 # 一级标题
 ## 二级标题
