@@ -21,7 +21,7 @@ FILE * fd;
 			ch = fgetc(fd);
 		}
 	fclose(fd);
-	fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
+	//fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
 
 	char sno[32] = "\0";
 //	char state[16]="\0";
